@@ -1,0 +1,91 @@
+//LOOP............................
+a for...of loop, which iterates over each item in an iterable object and temporarily assigns it to a variable.
+
+The syntax for a for...of loop looks like:
+
+Example Code
+for (const value of iterable) {
+
+}
+Note that you can use const because the variable only exists for a single iteration, not during the entire loop.
+...................................................................................................
+-Remember in your previous loop that you used the addition operator + to increase the value of i by 1.
+
+You can do a similar thing with a string value, by appending a new string to an existing string. For example, hello = hello + " World"; would add the string " World" to the existing string stored in the hello variable. This is called concatenation.
+....................................................................................................
+-You will need to add a new line to each row. However, pressing the return key to insert a line break between quotes in JavaScript will result in a parsing error. Instead, you need to use the special escape sequence \n, which is interpreted as a new line when the string is logged. For example:
+
+Example Code
+lineOne = lineOne + "\n" + lineTwo;
+..........................................................................................................
+-enabling you to use it for crafting a pyramid-like structure.
+
+To achieve this, you will use the .repeat() method available to strings. This method accepts a number as an argument, specifying the number of times to repeat the target string. For example, using .repeat() to generate the string "Code! Code! Code!":
+
+Example Code
+const activity = "Code! ";
+activity.repeat(3);
+........................................................................................................
+-At this point, you're encountering what's known as an off-by-one error, a frequent problem in zero-based indexing languages like JavaScript.
+
+The first index of your rows array is 0, which is why you start your for loop with i = 0. But repeating a string zero times results in nothing to print.
+
+To fix this, add 1 to the value of i in your .repeat() call. Do not assign it back to i like you did in your loop conditions.
+
+//FUNCTION............................................................
+The logic for formatting this pyramid is likely going to get complicated, which means it's a great time to extract that code into a function.
+
+A function is a block of code that can be reused throughout your application. Functions are declared with the following syntax:
+
+Example Code
+function name(parameter) {
+
+}
+The function keyword tells JavaScript that the name variable is going to be a function. parameter is a variable that represents a value that is passed into the function when it is used. A function may have as many, or as few, parameters as you'd like. Like a for loop, the space between the curly braces is the function body.
+
+-In order to use a function, you need to call it. A function call tells your application to run the code from the function wherever you choose to call it. The syntax for a function call is the function name followed by parentheses. For example, this code defines and calls a test function.
+
+Example Code
+function test() {
+
+}
+test();
+-Your call variable has an undefined value, even though you defined it! This is because your padRow function does not currently return a value. By default, functions return undefined as their value.
+
+In order to return something else, you need to use the return keyword. Here is an example of a function that returns the string "Functions are cool!":
+
+Example Code
+function demo() {
+  return "Functions are cool!";
+}
+
+-When you have a value that is explicitly written in your code, like the "Hello!" string in your function, it is considered to be hard-coded. Hard-coding a value inside a function might not make it as reusable as you'd like.
+
+Instead, you can define parameters for the function. Parameters are special variables that are given a value when you call the function, and can be used in your function to dynamically change the result of the function's code.
+
+To add a parameter to your function, you need to add a variable name inside the parentheses. For example, this demo function has a name parameter:
+
+Example Code
+function demo(name) {
+
+}
+
+-If you open your console again, you'll see that your padRow function is returning undefined, even though you defined a return value! This is because parameters need to be given a value when you call the function.
+
+When you pass a value to a function call, that value is referred to as an argument. Here is an example of calling a demo function and passing "Naomi" as the argument for the name parameter.
+
+Example Code
+function demo(name) {
+  return name;
+}
+demo("Naomi");
+
+-An example of a hard-coded function might be:
+
+Example Code
+function sayName(firstName, lastName) {
+  return "John Doe";
+}
+
+sayName("Camper", "Cat");
+This function would return "John Doe" regardless of the arguments passed to the parameters firstName, and lastName, so "John Doe" is considered a hard-coded value.

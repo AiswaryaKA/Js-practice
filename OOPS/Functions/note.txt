@@ -1,0 +1,10 @@
+object operations
+
+3-update 
+
+objectname['key']= value
+
+
+4- delete
+
+delete objectname.key

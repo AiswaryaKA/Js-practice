@@ -1,0 +1,104 @@
+//JavaScript......................................................
+
+-Assigning a value to a variable at the moment of its declaration is known as initialization.
+
+-JavaScript has seven primitive data types, with String being one of them. In JavaScript, a string represents a sequence of characters and can be enclosed in either single (') or double (") quotes.
+
+Note that strings are immutable, which means once they are created, they cannot be changed. The variable can still be reassigned another value.
+
+-When a variable is declared with the let keyword, you can reassign (or change the value of) that variable later on. In this example, the value of programmer is changed from "Naomi" to "CamperChan".
+
+Example Code
+let programmer = "Naomi";
+programmer = "CamperChan";
+Note that when reassigning a variable, you do not use the let keyword again.
+..........................................................................................................
+-When variable names are more than one word, there are specific naming conventions for how you capitalize the words. In JavaScript, the convention to use is camel case.
+
+Camel case means that the first word in the name is entirely lowercase, but the following words are all title-cased. Here are some examples of camel case:
+
+Example Code
+let variableOne;
+let secondVariable;
+let yetAnotherVariable;
+let thisIsAnAbsurdlyLongName;
+..........................................................................................................
+-The default value of an uninitialized variable is undefined. This is a special data type that represents a value that does not have a definition yet.
+
+You can still assign a value to an uninitialized variable.
+..........................................................................................................
+//ARRAY>>>>>>>>>>>>
+-In programming, you will often need to work with lots of data. There are many data structures that can help you organize and manage your data. One of the most basic data structures is an array.
+
+An array is a non-primitive data type that can hold a series of values. Non-primitive data types differ from primitive data types in that they can hold more complex data. Primitive data types like strings and numbers can only hold one value at a time.
+
+Arrays are denoted using square brackets ([]). Here is an example of a variable with the value of an empty array:
+
+Example Code
+let array = [];
+
+-When an array holds values, or elements, those values are separated by commas. Here is an array that holds two strings:
+
+Example Code
+let array = ["first", "second"];
+.....................................................
+-You can access the values inside an array using the index of the value. An index is a number representing the position of the value in the array, starting from 0 for the first value.
+
+You can access the value using bracket notation, such as array[0].
+the value inside your rows array has been changed directly? This is called mutation.
+.................................................................
+-A method in JavaScript is a function that's associated with certain values or objects. An example you've already encountered is the .log() method, which is part of the console object.
+
+>>>>>>>>Arrays have their own methods, and the first you will explore is the .push() method. This allows you to "push" a value to the end of an array. Here is an example to add the number 12 to the end of an array:
+
+Example Code
+array.push(12);
+.....................................................................
+-Another method essential for this project is the .pop() method. It removes the last element from an array and returns that element.
+
+When a method returns a value, you can think of it as giving the value back to you, making it available for use in other parts of your code.
+
+-You should have seen "freeCodeCamp" printed to the console. This is because .pop() returns the value that was removed from the array - and you pushed "freeCodeCamp" to the end of the array earlier.
+
+-Declaring a variable with the let keyword allows it to be reassigned. This means you could change character later to be a completely different value.
+
+For this project, you will not want to change these variable values. So instead, you should use const to declare them. const variables are special.
+
+First, a const variable cannot be reassigned like a let variable. This code would throw an error:
+
+Example Code
+const firstName = "Naomi";
+firstName = "Jessica";
+A const variable also cannot be uninitialized. This code would throw an error:
+
+Example Code
+const firstName;
+..........................................................................................................
+-To generate a pyramid, you will need to create multiple rows. When you have to perform a task repeatedly until a condition is met, you will use a loop. There are many ways to write a loop.
+
+You are going to start with a basic for loop. for loops use the following syntax:
+
+Example Code
+for (iterator; condition; iteration) {
+  logic;
+}
+..........................................................................................................
+-Your loop now needs a proper iterator. The iterator is a variable you can declare specifically in your for loop to control how the loop iterates or goes through your logic.
+
+It is a common convention to use i as your iterator variable in a loop. A for loop allows you to declare this in the parentheses (). For example, here is a for loop that declares an index variable and assigns it the value 100.
+
+Example Code
+for (let index = 100; "second"; "third") {
+
+}
+..........................................................................................................
+-The condition of a for loop tells the loop how many times it should iterate. When the condition becomes false, the loop will stop.
+
+In JavaScript, a Boolean value can be either true or false. These are not strings - you will learn more about the difference later on.
+
+For now, you will use the less than operator (<). This allows you to check if the value on the left is less than the value on the right. For example, count < 3 would evaluate to true if count is 2, and false if count is 4.
+
+-Your iteration statement will tell your loop what to do with the iterator after each run.
+
+When you reassign a variable, you can use the variable to reference the previous value before the reassignment. This allows you to do things like add three to an existing number. For example, bees = bees + 3 would increase the value of bees by three.
+.........................................................................................................

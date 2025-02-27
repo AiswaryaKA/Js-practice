@@ -1,0 +1,5 @@
+console.log('MY FIRST JS PROGRAM')
+console.log('MY NAME IS AISWARYA')
+console.log('Luminar')
+console.log(12345)
+console.log(false)
