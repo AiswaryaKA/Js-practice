@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Application Home</title>
+    <!-- css -->
+    <link rel="stylesheet" href="./style.css">
+
+
+    <!-- BOOSTARP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <section>
+        <header class="bgimg">
+            <!-- Navbar -->
+            <nav class="navbar bg-transparent">
+                <div class="container-fluid">
+                    <a class="navbar-brand fs-2 text-light fw-bold" href="#">
+                        <i class="fa-solid fa-bars"></i>
+                        <span>Dashboard</span>
+                    </a>
+                    <button class="btn bg-transparent p-2 text-white border-white fw-bold"><i
+                            class="fa-solid fa-right-from-bracket "></i> Log Out</button>
+                </div>
+            </nav>
+        </header>
+    </section>
+    <!-- About  -->
+
+    <section>
+        <div class="container-fluid mt-3">
+            <h3 class="text-center mt-3 mb-3 fw-bold">Welcome<span id="Username" class="text-danger"> User</span></h3>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore ratione excepturi quia numquam tenetur vero dolorum dignissimos odit, eum ea, sunt reiciendis magnam, nesciunt dolorem illo praesentium ipsa distinctio veritatis?
+            Sint facere eum, tenetur maxime id dolorem amet perferendis temporibus saepe rerum, earum perspiciatis possimus a excepturi quis culpa sunt numquam voluptatibus fugit eveniet? Labore, corrupti? Iure vero incidunt doloribus.
+            Qui officia quia veritatis iste sit suscipit impedit ullam possimus error quas expedita nobis nulla amet accusamus soluta vero exercitationem ex perferendis tenetur tempore, delectus eaque cupiditate ad. Ipsam, porro?
+            Dolorum eligendi numquam mollitia. Corporis sit vero ab! Nam possimus minus deleniti voluptas quibusdam doloribus, ex omnis necessitatibus provident nostrum dolore amet natus temporibus labore odit magni nisi quo dolores.
+            Fuga beatae rerum veniam repellat officiis dolores vel illum aspernatur et tempora at nostrum dolore facilis hic architecto, impedit molestias fugiat. Iusto blanditiis inventore aspernatur odit quasi ducimus, voluptate voluptas.</p>
+        </div>
+    </section>
+
+
+
+
+</body>
+
+<script>
+    let user = localStorage.getItem("user")
+
+    if(!user){
+        alert("Please login")
+        window.location = "login.html"
+    }else
+    Username.innerHTML = user
+
+    function logout(){
+        localStorage.removeItem("user")
+        window.location = 'login.html'
+    }
+</script>
+
+</html>

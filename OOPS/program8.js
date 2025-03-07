@@ -1,6 +1,6 @@
 //Exception Handling
 
-console.log('start exeution');
+console.log('start execution');
 
 
 exp = '10/2*5**'

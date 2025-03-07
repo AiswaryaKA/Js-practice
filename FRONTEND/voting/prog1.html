@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM access</title>
+    <style>
+        h1{
+            color: blue;
+        }
+        button{
+            padding: 10px;
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <h1>DOM</h1>
+    <h1 class="sty1">Sample</h1>
+    <p class="sty1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum earum, voluptas obcaecati laudantium assumenda deleniti atque sit iste aut ullam quibusdam accusamus nemo distinctio exercitationem quidem, autem alias inventore reiciendis?</p>
+
+    <p id="para">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo recusandae vel fugit quas quasi labore cupiditate! Fuga quaerat nemo quidem quisquam itaque assumenda veniam magnam repellat eius iste, iusto voluptas.</p>
+    <button onclick="change()">Click</button>
+</body>
+
+<script>
+    function change(){
+        // const content = document.getElementsByTagName('h1')
+        // console.log(content);
+        // content[0].innerHTML = 'Document Object Model'
+
+        // content[0].style.fontSize = '100px'
+        // content[0].style.color = 'red'
+
+
+        // const content = document.getElementsByClassName('sty1')
+        // console.log(content);
+        // content[1].style.backgroundColor = 'yellow'
+
+        // const data = document.getElementById('para')
+        // console.log(data);
+        // data.style.color = 'red'
+
+        // const data = document.querySelector('h1')
+        // console.log(data);
+        // const data = document.querySelector('.sty1')
+        // console.log(data);
+
+        // const data = document.querySelector('#para')
+        // console.log(data);
+
+        const data = document.querySelectorAll('#para')
+        console.log(data);
+        
+
+        
+        
+    }
+</script>
+</html>

@@ -1,0 +1,14 @@
+body{
+    background-color: rgba(213, 206, 84, 0.082);
+}
+.calculator{
+    max-width: 400px;
+    height: 450px;
+    width: 100%;
+}
+#display{
+    height: 60px;
+    font-size: 1.5rem;
+    background-color: rgb(230, 217, 217);
+    border: 2px solid rgb(21, 20, 20);
+}
